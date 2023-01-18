@@ -25,7 +25,7 @@ public final class App {
      * @param args The arguments of the program.
      */
     public static void main(String[] args)throws UnknownHostException, IOException {
-        Socket socket = new Socket("localhost", 7000);
+        Socket socket = new Socket("10.244.9.250", 7000);
 
         try(OutputStream os = socket.getOutputStream()){
             BufferedOutputStream bos= new BufferedOutputStream(os);
